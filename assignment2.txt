@@ -1,0 +1,35 @@
+i)INSERT INTO HOSPITAL VALUES (1,'Arprit',62,'Surgery','1998-01-12',300,'M');
+INSERT INTO HOSPITAL VALUES (2,'Zarina',22,'ENT','1997-12-12',250,'F');
+INSERT INTO HOSPITAL VALUES (3,'Kareem',32,'Orthopedic','1998-02-19',200,'M');
+INSERT INTO HOSPITAL VALUES (4,'Arun',12,'Surgery','1998-01-11',300,'M');
+INSERT INTO HOSPITAL VALUES (5,'Zubin',30,'ENT','1998-01-12',250,'M');
+INSERT INTO HOSPITAL VALUES (6,'Ketaki',16,'ENT','1998-02-24',250,'F');
+INSERT INTO HOSPITAL VALUES (7,'Ankita',29,'Cardiology','1998-02-20',800,'F');
+INSERT INTO HOSPITAL VALUES (8,'Zareen',45,'Gynaecologist','1998-02-22',300,'F');
+INSERT INTO HOSPITAL VALUES (9,'Kush',19,'Cardiology','1998-01-13',800,'M');
+INSERT INTO HOSPITAL VALUES (10,'Shilpa',23,'Nuclear Medicine','1998-01-20',400,'F');
+
+
+ii)EXEC SP_HELP HOSPITAL;
+
+iii)SELECT Name ,'of Age', Age,'got admitted on',Dateofadm from HOSPITAL ;
+
+iv)ALTER TABLE HOSPITAL ADD Address char(20);
+
+v)ALTER TABLE HOSPITAL ALTER COLUMN Address char(25);
+
+vi)ALTER TABLE HOSPITAL ALTER COLUMN Address Varchar(25);
+
+
+vii)EXEC SP_RENAME 'HOSPITAL.Address', 'Home_Address', 'COLUMN';
+
+viii)ALTER TABLE HOSPITAL DROP COLUMN Home_Address;
+
+ix)EXEC SP_RENAME 'HOSPITAL', 'Hospital_Data';
+
+X)UPDATE Hospital_Data 
+SET AGE=30 WHERE PNO=7;
+
+xi)DELETE FROM Hospital_Data;
+
+xii)DROP TABLE Hospital_Data;
